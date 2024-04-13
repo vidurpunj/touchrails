@@ -5,12 +5,34 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <meta charset="utf-8" />
+    <title>Starty - Multipurpose HTML5 Tamplate</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premium Bootstrap 5 Landing Page Template" />
+    <meta name="keywords" content="Startup, Business, Multi-uses, HTML, Clean, Modern, Creative" />
+    <meta name="author" content="Shreethemes" />
+    <meta name="email" content="shreethemes@gmail.com" />
+    <meta name="website" content="https://shreethemes.in" />
+    <meta name="Version" content="v1.2.0" />
+    <!-- favicon -->
+    <link href="images/favicon.ico" rel="shortcut icon">
 
+    <link href="https://unicons.iconscout.com/release/v3.0.6/css/line.css" rel="stylesheet" />
+    <!-- Main Css -->
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_include_tag "application", "data-turbo-track": "reload", type: "module" %>
+    <%= stylesheet_link_tag "css/tiny-slider.css", media: "all", integrity: true, crossorigin: "anonymous" %>
+    <%= stylesheet_link_tag "css/tobii.min.css", media: "all", integrity: true, crossorigin: "anonymous" %>
+    <%= stylesheet_link_tag "css/materialdesignicons.min.css", media: "all", integrity: true, crossorigin: "anonymous" %>
+
   </head>
 
   <body>
     <%= yield %>
+    <%= javascript_include_tag  'tiny-slider.js' %>
+    <%= javascript_include_tag  'tobii.min.js' %>
+    <%= javascript_include_tag  'feather.min.js' %>
+    <%= javascript_include_tag  'plugins.init.js' %>
+    <%= javascript_include_tag  'app.js' %>
   </body>
 </html>

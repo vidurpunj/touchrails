@@ -1,2 +1,11 @@
 //= link_tree ../images
 //= link_tree ../builds
+//= link_tree ../fonts
+//= link css/tiny-slider.css
+//= link css/tobii.min.css
+//= link css/materialdesignicons.min.css
+//= link tiny-slider.js
+//= link tobii.min.js
+//= link feather.min.js
+//= link plugins.init.js
+//= link app.js
